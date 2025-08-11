@@ -13,3 +13,5 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npx eslint "src/**/*.js" "tests/**/*.js"
+      - name: Run tests
+        run: npm test
