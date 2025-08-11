@@ -1,0 +1,30 @@
+name: CI Monitoring
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # Tous les jours à 8h
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Run CI Monitor
+      run: node scripts/monitor-ci.js
+    
+    - name: Notify on failure
+      if: failure()
+      uses: actions-ecosystem/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}

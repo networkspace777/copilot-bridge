@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="40" failures="32" errors="0" time="3.267">
+  <testsuite name="Monitoring de performance" errors="0" failures="2" skipped="0" timestamp="2025-08-11T11:07:32" time="1.383" tests="3">
+    <testcase classname="Monitoring de performance Doit logger un avertissement si seuil dépassé" name="Monitoring de performance Doit logger un avertissement si seuil dépassé" time="0.018">
+    </testcase>
+    <testcase classname="Monitoring de performance Ne pas logger si durée &lt; seuil" name="Monitoring de performance Ne pas logger si durée &lt; seuil" time="0.005">
+      <failure>Error: expect(jest.fn()).not.toHaveBeenCalled()
+
+Expected number of calls: 0
+Received number of calls: 1
+
+1: &quot;Performance critique: 600ms&quot;
+    at Object.toHaveBeenCalled (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\monitoring.test.js:15:29)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1009:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:949:3)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Monitoring de performance Gestion des erreurs" name="Monitoring de performance Gestion des erreurs" time="0.001">
+      <failure>Error: Test
+    at Object.perfMonitor.checkThreshold (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\monitoring.test.js:23:48)
+    at Object.checkThreshold (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\monitoring.test.js:25:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1009:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:949:3)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="API Adapter Tests" errors="0" failures="3" skipped="0" timestamp="2025-08-11T11:07:33" time="1.435" tests="3">
+    <testcase classname="API Adapter Tests should initialize successfully" name="API Adapter Tests should initialize successfully" time="0.008">
+      <failure>TypeError: ApiAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\adapter.api.test.js:15:15)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="API Adapter Tests should handle API errors" name="API Adapter Tests should handle API errors" time="0">
+      <failure>TypeError: ApiAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\adapter.api.test.js:15:15)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="API Adapter Tests should validate input parameters" name="API Adapter Tests should validate input parameters" time="0.002">
+      <failure>TypeError: ApiAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\adapter.api.test.js:15:15)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Core Functionality" errors="0" failures="13" skipped="0" timestamp="2025-08-11T11:07:32" time="1.532" tests="13">
+    <testcase classname="Core Functionality with valid client should initialize successfully" name="Core Functionality with valid client should initialize successfully" time="0.007">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:37:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality with valid client should check status" name="Core Functionality with valid client should check status" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:37:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality with valid client should handle sendRequest with valid prompt" name="Core Functionality with valid client should handle sendRequest with valid prompt" time="0">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:37:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality with valid client should reject empty prompt in sendRequest" name="Core Functionality with valid client should reject empty prompt in sendRequest" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:37:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality with valid client should log errors via _handleError" name="Core Functionality with valid client should log errors via _handleError" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:37:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality with valid client should handle getCodeSuggestions with empty response" name="Core Functionality with valid client should handle getCodeSuggestions with empty response" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:37:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality with valid client should handle getCodeSuggestions with null response" name="Core Functionality with valid client should handle getCodeSuggestions with null response" time="0">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:37:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality with valid client should handle sendRequest with null prompt" name="Core Functionality with valid client should handle sendRequest with null prompt" time="0">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:37:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality with valid client should handle getCodeSuggestions with missing params" name="Core Functionality with valid client should handle getCodeSuggestions with missing params" time="0">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:37:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality with invalid client should reject missing initialize method" name="Core Functionality with invalid client should reject missing initialize method" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:109:23)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1009:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:949:3)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality with invalid client should handle initialization errors" name="Core Functionality with invalid client should handle initialization errors" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:116:23)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1009:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:949:3)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality Performance monitoring should log performance metrics" name="Core Functionality Performance monitoring should log performance metrics" time="0.002">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:135:23)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1009:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:949:3)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="Core Functionality Error handling should implement full error handling" name="Core Functionality Error handling should implement full error handling" time="0">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\core-functionality.test.js:145:23)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1009:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:949:3)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Public API" errors="0" failures="1" skipped="0" timestamp="2025-08-11T11:07:34" time="0.158" tests="1">
+    <testcase classname="Public API should expose required methods" name="Public API should expose required methods" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\public-api.test.js:6:21)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1009:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:949:3)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="CopilotAdapter" errors="0" failures="9" skipped="0" timestamp="2025-08-11T11:07:34" time="0.252" tests="9">
+    <testcase classname="CopilotAdapter Error Handling should reject when context is empty" name="CopilotAdapter Error Handling should reject when context is empty" time="0.003">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-error.test.js:8:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="CopilotAdapter Error Handling should reject when language is empty" name="CopilotAdapter Error Handling should reject when language is empty" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-error.test.js:8:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="CopilotAdapter Error Handling should handle client errors" name="CopilotAdapter Error Handling should handle client errors" time="0">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-error.test.js:8:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="CopilotAdapter Error Handling should log errors via _handleError" name="CopilotAdapter Error Handling should log errors via _handleError" time="0">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-error.test.js:8:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="CopilotAdapter Error Handling should throw if client is missing" name="CopilotAdapter Error Handling should throw if client is missing" time="0">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-error.test.js:8:17)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="CopilotAdapter Success Cases should check status successfully" name="CopilotAdapter Success Cases should check status successfully" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-error.test.js:49:24)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="CopilotAdapter Success Cases should get code suggestions successfully" name="CopilotAdapter Success Cases should get code suggestions successfully" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-error.test.js:49:24)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="CopilotAdapter Success Cases sendRequest should reject empty prompts" name="CopilotAdapter Success Cases sendRequest should reject empty prompts" time="0">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-error.test.js:49:24)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="CopilotAdapter Success Cases sendRequest should handle valid prompts" name="CopilotAdapter Success Cases sendRequest should handle valid prompts" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-error.test.js:49:24)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Integration: CopilotAdapter Workflow" errors="0" failures="1" skipped="0" timestamp="2025-08-11T11:07:34" time="0.235" tests="1">
+    <testcase classname="Integration: CopilotAdapter Workflow should complete full suggestion flow" name="Integration: CopilotAdapter Workflow should complete full suggestion flow" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\integration\adapter-flow.test.js:8:15)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:775:7)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="CopilotAdapter Error Handling" errors="0" failures="1" skipped="0" timestamp="2025-08-11T11:07:34" time="0.124" tests="1">
+    <testcase classname="CopilotAdapter Error Handling should handle client initialization errors" name="CopilotAdapter Error Handling should handle client initialization errors" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\error-handling.test.js:11:21)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1009:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:949:3)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="CopilotAdapter Unit Tests" errors="0" failures="2" skipped="0" timestamp="2025-08-11T11:07:34" time="0.216" tests="2">
+    <testcase classname="CopilotAdapter Unit Tests should handle empty prompt in sendRequest" name="CopilotAdapter Unit Tests should handle empty prompt in sendRequest" time="0.001">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-methods.test.js:8:15)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+    <testcase classname="CopilotAdapter Unit Tests should return code suggestions" name="CopilotAdapter Unit Tests should return code suggestions" time="0.004">
+      <failure>TypeError: CopilotAdapter is not a constructor
+    at Object.&lt;anonymous&gt; (C:\Users\netwo\CascadeProjects\copilot-bridge\tests\unit\adapter-methods.test.js:8:15)
+    at Promise.finally.completed (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1559:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1499:10)
+    at _callCircusHook (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:978:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:943:5)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:839:13)
+    at _runTestsForDescribeBlock (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:829:11)
+    at run (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:757:3)
+    at runAndTransformResultsToJestFormat (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\jestAdapterInit.js:1920:21)
+    at jestAdapter (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-circus\build\runner.js:101:19)
+    at runTestInternal (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:275:16)
+    at runTest (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:343:7)
+    at Object.worker (C:\Users\netwo\CascadeProjects\copilot-bridge\node_modules\jest-runner\build\testWorker.js:497:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="API Integration" errors="0" failures="0" skipped="0" timestamp="2025-08-11T11:07:34" time="0.192" tests="5">
+    <testcase classname="API Integration should connect successfully" name="API Integration should connect successfully" time="0.003">
+    </testcase>
+    <testcase classname="API Integration should handle connection error" name="API Integration should handle connection error" time="0.029">
+    </testcase>
+    <testcase classname="API Integration should set connected=false on constructor" name="API Integration should set connected=false on constructor" time="0.001">
+    </testcase>
+    <testcase classname="API Integration should handle successful connection" name="API Integration should handle successful connection" time="0.001">
+    </testcase>
+    <testcase classname="API Integration should handle failed connection" name="API Integration should handle failed connection" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="New Adapter" errors="0" failures="0" skipped="0" timestamp="2025-08-11T11:07:34" time="0.173" tests="1">
+    <testcase classname="New Adapter should initialize successfully" name="New Adapter should initialize successfully" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-08-11T11:07:34" time="0.171" tests="1">
+    <testcase classname=" Vérification du module principal" name=" Vérification du module principal" time="0.005">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,13 @@
+name: Audit Trimestriel
+on:
+  schedule:
+    - cron: '0 0 1 */3 *'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          ./verify_signatures.sh
+          ./consistency_check.py
+          ./test_permissions.sh

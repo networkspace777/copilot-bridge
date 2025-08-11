@@ -1,0 +1,53 @@
+{
+  "dependencies": {
+    "@types/vscode": "1.33.0",
+    "express": "^5.1.0",
+    "pako": "^2.1.0",
+    "vscode-languageclient": "^8.1.0",
+    "vscode-languageserver": "^9.0.1",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@eslint/js": "^9.33.0",
+    "babel-jest": "^30.0.5",
+    "babel-plugin-istanbul": "^7.0.0",
+    "eslint": "^9.33.0",
+    "husky": "^9.1.7",
+    "jest": "^30.0.5",
+    "jest-junit": "^16.0.0",
+    "jest-watch-typeahead": "^3.0.1",
+    "lint-staged": "^16.1.5",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.4.1"
+  },
+  "scripts": {
+    "clean": "rimraf coverage && rimraf test-results.xml",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --config=jest.config.cjs",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "coverage": "jest --coverage",
+    "check-migration": "node scripts/check-migration.js",
+    "health-check": "node scripts/health-check.js",
+    "test:ci": "jest --ci --reporters=default --reporters=jest-junit",
+    "test:reset": "npm run clean && npm install && npm test",
+    "start": "node server.js"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "name": "copilot-bridge",
+  "version": "1.0.0",
+  "description": "- **Client LSP** : Interface avec GitHub Copilot - **WebSocket Bridge** : Tunnel de communication temps-réel - **API REST** : Endpoints pour intégration externe   - `GET /api/suggestions` - Récupère les suggestions (cache-enabled)",
+  "main": "src/index.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,5 @@
+custom_metrics:
+  - name: "feature_usage"
+    type: "counter"
+    labels: ["feature_name"]
+    help: "Tracking new feature adoption"

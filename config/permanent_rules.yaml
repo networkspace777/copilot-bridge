@@ -1,0 +1,18 @@
+integration:
+  activation: auto
+  refresh: daily
+  scopes:
+    - code
+    - docs
+    - debug
+
+optimization:
+  metrics_analysis: daily  # Aligné avec global_rules.md
+  auto_adjust: true
+  sync_required: true
+
+memory:
+  retention_policy:
+    feedback: 365d
+    metrics: 90d
+    errors: permanent

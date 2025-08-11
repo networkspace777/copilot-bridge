@@ -1,0 +1,15 @@
+{
+  "title": "Copilot Bridge Metrics",
+  "panels": [
+    {
+      "title": "Request Latency",
+      "type": "graph",
+      "datasource": "Prometheus"
+    },
+    {
+      "title": "Feature Usage", 
+      "type": "graph",
+      "targets": [{"expr": "rate(feature_usage[5m])"}]
+    }
+  ]
+}

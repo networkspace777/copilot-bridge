@@ -1,0 +1,17 @@
+name: Weekly Review Reminder
+on:
+  schedule:
+    - cron: '0 9 * * 1'
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: 1,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '📅 Revue hebdomadaire requise : LIMITATIONS.md, MIGRATION-GUIDE.md et workflows'
+            })

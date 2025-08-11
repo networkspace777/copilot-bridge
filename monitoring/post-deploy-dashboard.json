@@ -1,0 +1,4 @@
+{
+  "metrics": ["latency", "error_rate", "feature_usage"],
+  "alert_rules": {"latency": ">200ms", "errors": ">0.5%"}
+}
