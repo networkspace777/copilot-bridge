@@ -1,4 +1,5 @@
 # Copilot Bridge API
+[![CI Status](https://github.com/networkspace777/copilot-bridge/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/networkspace777/copilot-bridge/actions)
 
 ## Fonctionnalités
 - **Client LSP** : Interface avec GitHub Copilot
@@ -71,4 +72,3 @@ node scripts/monitor-ci.js
 2. Ajouter le secret dans GitHub :
 ```bash
 SLACK_WEBHOOK_URL="votre_url_webhook"
-```
