@@ -1,5 +1,6 @@
 # Copilot Bridge API
 [![CI Status](https://github.com/networkspace777/copilot-bridge/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/networkspace777/copilot-bridge/actions)
+[![CI Status](https://github.com/networkspace777/copilot-bridge/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/networkspace777/copilot-bridge/actions)
 
 ## Fonctionnalités
 - **Client LSP** : Interface avec GitHub Copilot
